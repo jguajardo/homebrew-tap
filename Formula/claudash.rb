@@ -1,25 +1,25 @@
 class Claudash < Formula
   desc "The control room for Claude Code: sessions that need you, where your plan limits and dollars went, MCP, specs and secrets in transcripts. Unofficial."
   homepage "https://github.com/jguajardo/claudash"
-  version "1.1.0"
+  version "1.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.0/claudash-aarch64-apple-darwin.tar.xz"
-      sha256 "ec7babb87ff534f684ed0122164315892652888fdf30d202d3c78257bfdd6ba2"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-aarch64-apple-darwin.tar.xz"
+      sha256 "8f8f042e68cac23145dfa6bbc6dcfd0ef07a49f3b8d3d41c0ba0b6e8d4166ef4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.0/claudash-x86_64-apple-darwin.tar.xz"
-      sha256 "d3abeb79f592301f2398df61649f8843b4f9ea41aefde4bab04d96406d953382"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-x86_64-apple-darwin.tar.xz"
+      sha256 "9a9bbfa968c16120c33d25c367830dc3f5d089d8b12b4507db3e793a7edb8f21"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.0/claudash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5dc8f3be56711437b280846160c817c0ab10d3252761474d57324f2c8813e5ab"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "37baa39f0daee0b654db07940e78f14101ae92937b64a7c82374c3cadf527cf7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.0/claudash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "66e5205dfc331f7d543a88c51cf275db8ee5bb3a7e1c3fa3d7dddf8c648a9b71"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f02cce86111de0fe58e2acc549cbca63a559bb03094dd5c99149b3a7d3c3d786"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

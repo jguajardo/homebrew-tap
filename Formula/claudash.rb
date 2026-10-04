@@ -1,25 +1,25 @@
 class Claudash < Formula
-  desc "The control room for Claude Code: sessions that need you, where your plan limits and dollars went, MCP, specs and secrets in transcripts. Unofficial."
+  desc "The control room for Claude Code: every session and project on one screen. What a waiting session asks, resume and search conversations, MCP sign-in, branch reviews, specs, snapshots, a security audit and plan limits. Unofficial."
   homepage "https://github.com/jguajardo/claudash"
-  version "1.1.1"
+  version "1.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-aarch64-apple-darwin.tar.xz"
-      sha256 "8f8f042e68cac23145dfa6bbc6dcfd0ef07a49f3b8d3d41c0ba0b6e8d4166ef4"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-aarch64-apple-darwin.tar.xz"
+      sha256 "3d6e87d98b44ed7164cf0755a147af86d280077b8e6d6115e3f74fc960459c03"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-x86_64-apple-darwin.tar.xz"
-      sha256 "9a9bbfa968c16120c33d25c367830dc3f5d089d8b12b4507db3e793a7edb8f21"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-x86_64-apple-darwin.tar.xz"
+      sha256 "e410ee23e442496afd83f31bd9fd677bf1a7369e06ba116950c0765dd98dfd90"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "37baa39f0daee0b654db07940e78f14101ae92937b64a7c82374c3cadf527cf7"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f9e014ebe594000b8566ade76324d1430954a1e9197555bc8358309767fc9597"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.1/claudash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f02cce86111de0fe58e2acc549cbca63a559bb03094dd5c99149b3a7d3c3d786"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "dbe10ffec8a5f0b321b63275f58849da67d6ca37873d6ac25d0bde7b3f4a3f66"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

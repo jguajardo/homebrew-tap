@@ -1,25 +1,25 @@
 class Claudash < Formula
   desc "The control room for Claude Code: every session and project on one screen. What a waiting session asks, resume and search conversations, MCP sign-in, branch reviews, specs, snapshots, a security audit and plan limits. Unofficial."
   homepage "https://github.com/jguajardo/claudash"
-  version "1.1.2"
+  version "1.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-aarch64-apple-darwin.tar.xz"
-      sha256 "3d6e87d98b44ed7164cf0755a147af86d280077b8e6d6115e3f74fc960459c03"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-aarch64-apple-darwin.tar.xz"
+      sha256 "f3c79557d9fe8a991494de25a4796d9b7869ef8c05a977e728fc402964115b21"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-x86_64-apple-darwin.tar.xz"
-      sha256 "e410ee23e442496afd83f31bd9fd677bf1a7369e06ba116950c0765dd98dfd90"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-x86_64-apple-darwin.tar.xz"
+      sha256 "873313b39225c893b225b115c84b5dbd412b886ef1650563ce8eee8c1fccf394"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f9e014ebe594000b8566ade76324d1430954a1e9197555bc8358309767fc9597"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "af53c77436bd2607b68db888d382fe2703ab523aae17d4781cbc87daf6929d44"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.1.2/claudash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dbe10ffec8a5f0b321b63275f58849da67d6ca37873d6ac25d0bde7b3f4a3f66"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "df3b3bf7405fb2368b9f591b006f9ae624576a6a0fb6646091434212c0334cb0"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

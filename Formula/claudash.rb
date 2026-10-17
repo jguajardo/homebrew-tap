@@ -1,25 +1,25 @@
 class Claudash < Formula
   desc "The control room for Claude Code: every session and project on one screen. What a waiting session asks, resume and search conversations, MCP sign-in, branch reviews, specs, snapshots, a security audit and plan limits. Unofficial."
-  homepage "https://github.com/jguajardo/claudash"
-  version "1.2.0"
+  homepage "https://jguajardo.github.io/claudash/"
+  version "1.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-aarch64-apple-darwin.tar.xz"
-      sha256 "f3c79557d9fe8a991494de25a4796d9b7869ef8c05a977e728fc402964115b21"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.3.0/claudash-aarch64-apple-darwin.tar.xz"
+      sha256 "7b9fabdd87bef52c5da6450ae902f3d37c4a4af8bb8ab7a6fef32d6be5661698"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-x86_64-apple-darwin.tar.xz"
-      sha256 "873313b39225c893b225b115c84b5dbd412b886ef1650563ce8eee8c1fccf394"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.3.0/claudash-x86_64-apple-darwin.tar.xz"
+      sha256 "ac8c2ae20293acaca2a59657ca5d79300e0386ca29d355c6e84821ed297723b2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "af53c77436bd2607b68db888d382fe2703ab523aae17d4781cbc87daf6929d44"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.3.0/claudash-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "801644062d0af3f45cd4c3ece36dec2ef04d44f91e757420cbc36514b96bd01b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jguajardo/claudash/releases/download/v1.2.0/claudash-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "df3b3bf7405fb2368b9f591b006f9ae624576a6a0fb6646091434212c0334cb0"
+      url "https://github.com/jguajardo/claudash/releases/download/v1.3.0/claudash-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "152839207f01e200404f63ac5351a6c10e5af29c07e68eaaadeb5ebbdb9194dc"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
